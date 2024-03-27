@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    background: rgb(34,43,195);
+    background: linear-gradient(0deg, rgba(34,43,195,1) 0%, rgba(45,227,253,1) 100%);
+    font-family:'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+/* header{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100px;
+} */
+/* debut de mon header */
+/* h1{
+    margin: 0;
+} */
+/* fin de mon header */
+
+/* debut de mon main */
+/* #quiz{
+    text-align: center;
+    margin-top: 5%;
+}
+.answer{
+    text-align: center;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+p:hover{
+    background-color:green ;
+}
+p{
+    cursor:grab;
+}
+h3{
+    text-align: center;
+    margin-top: 5%;
+}
+#reponse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+}
+#button{
+    text-align: center;
+    border-radius: 20px;
+}
+#replayButton{
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+} */
+
+/* fin de mon main */
+
+header {
+    background-color: #000a27;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quiz {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#reponse {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.answer {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.answer:hover{
+    background-color: green;
+}
+
+#result {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#button {
+    text-align: center;
+}
+
+#replayButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#replayButton:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    #reponse {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
